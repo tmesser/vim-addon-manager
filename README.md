@@ -1,7 +1,11 @@
 # VAM — maximizing overall Vim experience
-“VAM” is short name for vim-addon-manager
+“VAM” is short name for vim-addon-manager.
+
 This is a quick fork that makes VAM use the https:\\ protocol instead of the git:\\ protocol.
 Certain particularly xenophobic firewalls (like the one I have to deal with), block one but not the other.
+
+This has been tested to work with zeekay's excellent [vim config](https://github.com/dot-vim).
+To use it inside another application like that, simply have the setup.sh or whatever point at this fork instead of the main repo.
 
 ## FEATURES
 - Declarative: The behaviour of Vim is determined by your .vimrc only. [1]
