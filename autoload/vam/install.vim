@@ -56,7 +56,7 @@ fun! vam#install#RewriteName(name)
     " github:{Name}      {"type": "git", "url": "git://github.com/{Name}/vim-addon-{Name}}
     " github:{N}/{Repo}  {"type": "git", "url": "git://github.com/{N}/{Repo}"}
     let rest = a:name[len('github:'):]
-    return {'type' : 'git', 'url' : 'git://github.com/'.(rest =~ '/' ? rest : rest.'/vim-addon-'.rest)}
+    return {'type' : 'git', 'url' : 'https://github.com/'.(rest =~ '/' ? rest : rest.'/vim-addon-'.rest)}
   elseif a:name[:3]==#'git:'
     " git:{URL}          {"type": "git", "url": {URL}}
     return {'type' : 'git', 'url' : a:name[len('git:'):]}
